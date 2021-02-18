@@ -119,4 +119,9 @@ body {
 	.bottom {
 		transform: translate(70%, 55%);
 	}
+	.card-profile {
+		position: absolute;
+		right: 120px;
+	}
+}
 }
