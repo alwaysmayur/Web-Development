@@ -91,13 +91,9 @@ button {
 	color: #fff;
 	outline: none;
 }
-
-@media only screen and (max-width: 705px) {
+@media all and (max-width: 320px) and (min-width: 780px) {
 	.card {
 		width: 310px;
-		position: absolute;
-		top: 10%;
-		left: 10%;
 	}
 	.card-bottom {
 		color: #fff;
@@ -112,3 +108,4 @@ button {
 		border-bottom-right-radius: 15px;
 	}
 }
+
