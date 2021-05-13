@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Light On & Off</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<button type="button" class="btnOn" onclick="light(1)">Light On</button>
+			<img src="./pic_bulboff.gif" alt="light off" id="myImage" />
+			<button type="button" class="btnOff" onclick="light(0)">Light Off</button>
+		</div>
+
+		<script>
+			function light(sw) {
+				var pic;
+				if (sw == 0) {
+					pic = 'pic_bulboff.gif';
+				} else {
+					pic = 'pic_bulbon.gif';
+				}
+				document.getElementById('myImage').src = pic;
+			}
+		</script>
+	</body>
+</html>
